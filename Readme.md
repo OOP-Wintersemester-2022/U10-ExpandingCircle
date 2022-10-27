@@ -1,34 +1,10 @@
----
-title: Template
-author: Zuletzt bearbeitet von Alexander Bazo
-documentclass: scrartcl
-classoption:
-  - a4paper
-header-includes: |
-    \usepackage{german} 
-    \usepackage[a4paper,left=2.5cm, right=2.5cm,top=2.5cm, bottom=3cm]{geometry}
-    \usepackage{fancyhdr}
-    \usepackage{graphicx}
-    \pagestyle{fancy}
-    \fancyhf{}
-    \rhead{OOP WS 2020/21}
-    \lhead{U00 | Template}
-    \cfoot{\includegraphics[height=2cm]{docs/footer.png}}
-    \fancypagestyle{plain}{
-      \fancyhf{}
-      \rhead{OOP WS 2020/21}
-      \lhead{U00 | Template}
-      \cfoot[C]{\includegraphics[height=2cm]{docs/footer.png}}}
----
+# U10 | Expanding Circle
 
+Schreiben Sie ein Programm auf der Basis der GraphicsApp, das einen wachsenden Kreis animiert. In der Mitte der Zeichenfläche wird eine Ellipse dargestellt, die mit jedem Aufruf der `draw`-Methode um `1px` in beide Dimensionen wächst. Nutzen Sie zur Animation das Muster, das in
+der Vorlesung im Rahmen des *draw loops* vorgestellt wurde.
 
-# Template für Übungsaufgaben 
+Definieren Sie in Ihrem Programm zwei Konstanten für einen initialen (`50px`) sowie einen maximalen Radius (`250px`) für die Ellipse. Sobald der maximale Wert erreicht ist, wird die Ellipse auf die ursprüngliche Größe zurückgesetzt. Die Animation `[initialer Radius -> maximaler Radius]` soll sich endlos wiederholen.
 
-## Wichtige Informationen zur Bearbeitung der Aufgabe 
- - [Link zu wichtiger Ressource](https://www.uni-regensburg.de/sprache-literatur-kultur/medieninformatik/)
-
-## Starterpaket
-
-Ein vorbereitetes Starterpaket zur selbständigen Implementierung der Aufgabe finden Sie [hier](https://github.com/OOP-Ubungen-WS2020-21/U00-Template-fuer-Aufgaben/archive/Starterpaket.zip).
-
-## Text
+| So soll der Expanding Circle aussehen. |
+|:----:|
+| ![Expanding Circle](./docs/u03-expandingCircle.gif) |
